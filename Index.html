@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MyCalculator</title>
     <link rel="stylesheet" href="style.css">
     <!-- <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css'> -->
 </head>
@@ -11,32 +11,33 @@
     <div id="Calculator">
         <div id="display"></div>
         <div id="clr">
-            <button class="buttn clr" id="clear">C</button>
-            <button class="buttn clr" id="backspace">←</button>
+            <button class="buttn clr" onclick="Cleardisplay()"id="clear">AC</button>
+            <button class="buttn clr" onclick="backspace()" id="backspace">←</button>
         </div>
         <div id="buttons">
-           <button class="buttn">1</button>
-           <button class="buttn">2</button>
-           <button class="buttn">3</button>
-           <button class="buttn">+</button>
-           <button class="buttn">4</button>
-           <button class="buttn">5</button>
-           <button class="buttn">6</button>
-           <button class="buttn">-</button>
-           <button class="buttn">7</button>
-           <button class="buttn">8</button>
-           <button class="buttn">9</button>
-           <button class="buttn">*</button>
-           <button class="buttn">=</button>
-           <button class="buttn">0</button>
-           <button class="buttn">%</button>
-           <button class="buttn">/</button>
-           <button class="buttn">(</button>
-           <button class="buttn">)</button>
-           <button class="buttn">.</button>
-           <button class="buttn" id="sqrt">√</button>
+           <button class="buttn" onclick="displaytoscreen('1')">1</button>
+           <button class="buttn" onclick="displaytoscreen('2')">2</button>
+           <button class="buttn" onclick="displaytoscreen('3')">3</button>
+           <button class="buttn" onclick="displaytoscreen('+')">+</button>
+           <button class="buttn" onclick="displaytoscreen('4')">4</button>
+           <button class="buttn" onclick="displaytoscreen('5')">5</button>
+           <button class="buttn" onclick="displaytoscreen('6')">6</button>
+           <button class="buttn" onclick="displaytoscreen('-')">-</button>
+           <button class="buttn" onclick="displaytoscreen('7')">7</button>
+           <button class="buttn" onclick="displaytoscreen('8')">8</button>
+           <button class="buttn" onclick="displaytoscreen('9')">9</button>
+           <button class="buttn" onclick="displaytoscreen('*')">*</button>
+           <button class="buttn" onclick="Calculate()">=</button>
+           <button class="buttn" onclick="displaytoscreen('0')">0</button>
+           <button class="buttn" onclick="displaytoscreen('%')">%</button>
+           <button class="buttn" onclick="displaytoscreen('/')">/</button>
+           <button class="buttn" onclick="displaytoscreen('(')">(</button>
+           <button class="buttn" onclick="displaytoscreen(')')">)</button>
+           <button class="buttn" onclick="displaytoscreen('.')">.</button>
+           <button class="buttn" id="sqrt" onclick="displaytoscreen('√')">√</button>
         </div>
     </div>
+    <div id="emni"></div>
     <script src="Calc.js"></script>
 </body>
 </html>
